@@ -24,41 +24,54 @@
 
     <div class="container">
         <div class="header">
-            <div class="search-box">
-                <input type="text" placeholder="Enter your city" class="input-box">
-                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
-            </div>
+            <form action="" class="search-city">
+                <div class="search-box">
+                    <input type="text" placeholder="Enter your city" class="input-box city">
+                    <button type="submit" class="fa-solid fa-magnifying-glass" id=""></button>
+                </div>
+            </form>
         </div>
 
         <div class="location-not-found">
-            <h1>Sorry, Location not found!!!</h1>
-            <!-- <img src="img/404.png" alt="404 Error"> -->
+            <h1 class="city-blank">Please, Enter a city name !!!</h1>
+            <!-- <h1 class="">Sorry, Location not found!!!</h1> -->
+            <img src="img/404.png" alt="404 Error">
         </div>
 
         <div class="weather-body">
-            <!-- <img src="img/cloud.png" alt="Weather Image" class="weather-img"> -->
-            <div class="weather-box">
-                <p class="temperature">0 <sup>°C</sup></p>
-                <p class="description">light rain</p>
+
+
+            <div class="city">
+                <h2 class="cityName"></h2>
             </div>
 
-            <!-- <div class="weather-details">
+            <div class="date-box">
+                <b class="date"></b>
+            </div>
+
+            <img class="weather-image" src="img/haze.png" alt="404 Error">
+
+            <div class="weather-box">
+                <p class="temperature"> </p>
+                <p class="description"> </p>
+            </div>
+
+            <div class="weather-details">
                 <div class="humidity">
                     <i class="fa-sharp fa-solid fa-droplet"></i>
                     <div class="text">
-                        <span id="humidity">45%</span>
+                        <span id="humidity"></span>
                         <p>Humidity</p>
                     </div>
                 </div>
-
                 <div class="wind">
                     <i class="fa-solid fa-wind"></i>
                     <div class="text">
-                        <span id="wind-speed">12Km/H</span>
+                        <span id="wind-speed"></span>
                         <p>Wind Speed</p>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
