@@ -17,7 +17,8 @@
     overflow: hidden;
     height: 100vh;
     position: relative;
-    width: 100%;
+    width: 100%a;
+    overflow: hidden;
 }
 
 
@@ -367,7 +368,7 @@
 
     .container {
         top: 20%;
-        left: 32%;  
+        left: 32%;
     }
 
 
