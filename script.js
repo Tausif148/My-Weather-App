@@ -25,7 +25,6 @@ const description = document.querySelector('.description');
 const humidity = document.querySelector('#humidity');
 const wind_speed = document.querySelector('#wind-speed');
 const date = document.querySelector('.date');
-
 const weather_image = document.querySelector('.weather-image');
 
 
@@ -35,9 +34,7 @@ function updateOnUI(result) {
     description.textContent = result.weather[0].main;
     humidity.textContent = `${result.main.humidity}%`;
     wind_speed.textContent = `${result.wind.speed} Km/H`;
-
     // set weather img 
-
     const inImgFormate = result.weather[0].main.toLocaleLowerCase();
 
     console.log(inImgFormate);
@@ -59,8 +56,6 @@ const location_not_found = document.querySelector('.location-not-found');
 const city_blank = document.querySelector('.city-blank');
 
 // fetchWeatherData("pune");
-
-
 search_city.addEventListener('submit', (e) => {
     e.preventDefault();
 
