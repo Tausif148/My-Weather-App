@@ -17,7 +17,7 @@
     overflow: hidden;
     height: 100vh;
     position: relative;
-    width: 100%a;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -205,8 +205,9 @@
     border: 1px solid #8FE0FF;
     margin: 0 auto;
     position: absolute;
-    top: 30%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -363,38 +364,12 @@
 }
 
 
-
-@media (max-width:1440px) {
-
-    .container {
-        top: 20%;
-        left: 32%;
-    }
-
-
-
-}
-
-@media (max-width:768px) {
-    .container {
-        top: 25%;
-        left: 23.5%;
-    }
-}
-
-
 @media (max-width:576px) {
     #clouds {
         padding: 160px 0 0 0;
     }
-
     .container {
         width: 100%;
-        top: 25%;
-        left: 1px;
         padding: 5px;
     }
-
-
-
 }
